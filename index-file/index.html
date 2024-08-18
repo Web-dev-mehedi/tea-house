@@ -4,33 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea house</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/icons8-tea-tin-48.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8311064123.js" crossorigin="anonymous"></script>
+    <script src="./tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-     <main>
-         
-           <section class="tea-house-sec">
-            <div class="tea-house-container">
-                <div class="tea-house-text-wrap">
-                    <h1>It's good 
-                        tea time at The Tea House</h1>
-                    <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                    <button>explore-more <img src="../images/arrow.png" alt=""></button>
-                </div>
 
-                 <div class="tea-house-image-wrap">
-                    <img src="../images/banner.png" alt="">
-                    <div class="review">
-                        <div class="left-content"><i class="fa-solid fa-star"></i></div>
-                        <div class="right-content">
-                            <h2>5.00</h2>
-                            <p>Trust Pilot Ratings</p></div>
-                       </div>
-                 </div>
-            </div>
-           </section>
 
-     </main>
-</body>
+    <body class="font-manrope">
+    
+         <main class="px-10 py-8 md:px-16 md:py-10 lg:px-28 lg:py-20">
+              
+            <!-- hero-section-start-here -->
+             
+               <section>
+                    <!-- containe-here -->
+                    <div class="container m-auto md:flex md:flex-row md:gap-16">
+                        <!-- text-content-wrap -->
+                           <div class="w-full m-auto md:w-[55%] md:">
+                              <h1 class="text-7xl text-[#1C1C1C] font-extrabold leading-snug mb-4">It's good <br>
+                                tea time at The <br> Tea House</h1>
+                               <p class="text-[#777777] text-xl mb-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                            <button class="text-white text-xl font-medium bg-gradient-to-l from-[#FF0000] to-[#FF8938] px-5 py-4 capitalize rounded-xl ">explore more <i class="fa-solid fa-arrow-right -rotate-45"></i></button>    
+                           </div>
+
+                        <!-- image-content-wrap-->
+                           <div class="w-full m-auto relative md:w-[450px]">
+                              <img src="../images/banner.png" alt="" class="w-full"> 
+                              <div class="flex flex-row gap-5 justify-center items-center px-8 py-6 bg-white shadow-xl rounded-lg absolute bottom-0 left-3">
+                                <div class="text-4xl text-yellow-400"><i class="fa-solid fa-star"></i></div>
+                                <div>
+                                    <h1 class="text-3xl text-[#1C1C1C] font-extrabold">5.00</h1>
+                                    <p class="text-[#777777] font-medium text-base">Trust Pilot Ratings</p>
+                                </div>
+                              </div>
+                          </div>
+                         
+                    </div>
+                         
+               </section>
+
+               <!-- feature-product-section-start-here -->
+                 
+                <section>
+                      <!-- conatainer -->
+                      <div class="container m-auto ">
+                           <!-- upper-content-wrap -->
+                               <div>
+                                  <h1>Our Featured Products</h1>
+                                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                               </div>
+                          <!--lower-content-wrap -->
+                               <div>
+                                  <!-- product-card-here -->
+                                     <div>
+                                        <img src="../images/tea-1.png" alt="">
+                                        <h2>Milk Tea</h2>
+                                        <p>Creamer could be replaced by fresh milk</p>
+                                     </div>
+                               </div>
+                      </div>
+
+                </section>
+
+         </main>
+
+   </body>
+
+
 </html>
